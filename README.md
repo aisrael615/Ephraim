@@ -171,15 +171,92 @@ No new decisions or actions occur during this phase.
 
 
 
-
-
 ## Installation
+
+These instructions guide you through running the **Ephraim agent** using Docker
+
+---
+
+## 1. Clone the repository
+
+Open PowerShell / Terminal and run:
+
+```powershell
+git clone https://github.com/aisrael615/Ephraim
+cd Ephraim
+```
+
+---
+
+## 2. Create a `.env` file
+
+Create a file named `.env` in the root of the repo. This file stores environment variables needed by Ephraim (like API keys or secrets).
+
+Example `.env`:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+```
+
+> **Important:** `.env` is ignored by Git and should **never be committed**.
+
+---
+
+## 3. Verify project structure
+
+Your project should look like this:
+
+```
+Ephraim/
+├── Dockerfile
+├── requirements.txt
+├── .gitignore
+└── agent/
+    ├── ephraim.py
+    ├── database.json
+    └── other files...
+```
+
+* `agent/` contains the Python code and `database.json`
+* `.env` is in the root folder
+
+---
+
+## 4. Build the Docker image
+
+```powershell
+docker build --no-cache -t ephraim-agent .
+```
+
+* `--no-cache` ensures all files are copied fresh
+* `-t ephraim-agent` tags the Docker image
+
+---
+
+## 5. Run Ephraim interactively
+
+```powershell
+docker run -it --rm --env-file .env ephraim-agent
+```
+
+### Explanation:
+
+* `-i` → interactive mode, keeps STDIN open
+* `-t` → allocates a terminal for proper output
+* `--rm` → removes the container after exit
+* `--env-file .env` → loads your environment variables
+
+You can now **chat with Ephraim** in real time:
+
+Type `exit` or `quit` to close the container.
+
+---
 
 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
