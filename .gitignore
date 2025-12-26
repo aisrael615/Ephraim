@@ -1,0 +1,11 @@
+# Ignore Python compiled files
+__pycache__/
+.idea/
+*.pyc
+
+# Ignore environment variables
+.env
+
+# Ignore Docker artifacts
+*.log
+*.sqlite3

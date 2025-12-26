@@ -1,0 +1,90 @@
+{
+"users":[
+{"id":1,"name":"Alice","age":30,"dob":"1995-04-12","city":"Tel Aviv","prescriptions":["PainAway","AllerFree"]},
+{"id":2,"name":"Bob","age":45,"dob":"1980-09-03","city":"Jerusalem","prescriptions":[]},
+{"id":3,"name":"Carol","age":22,"dob":"2003-01-27","city":"Haifa","prescriptions":["DigestEase"]},
+{"id":4,"name":"David","age":60,"dob":"1965-06-18","city":"Tel Aviv","prescriptions":["CardioSafe","PainAway"]},
+{"id":5,"name":"Eve","age":35,"dob":"1990-11-09","city":"Beer Sheva","prescriptions":["AllerFree","DigestEase"]},
+{"id":6,"name":"Frank","age":50,"dob":"1975-02-21","city":"Jerusalem","prescriptions":["PainAway"]},
+{"id":7,"name":"Grace","age":28,"dob":"1997-08-14","city":"Haifa","prescriptions":["ColdCure","AllerFree"]},
+{"id":8,"name":"Hannah","age":40,"dob":"1985-12-05","city":"Tel Aviv","prescriptions":["CardioSafe"]},
+{"id":9,"name":"Ian","age":33,"dob":"1992-03-30","city":"Beer Sheva","prescriptions":["DigestEase","PainAway"]},
+{"id":10,"name":"Jack","age":55,"dob":"1970-07-19","city":"Jerusalem","prescriptions":["ColdCure"]}
+]
+,
+  "pharmacy_inventory": [
+    {
+      "name": "PainAway",
+      "dosages": ["200mg", "500mg"],
+      "usage_instructions": "Take one tablet every 6-8 hours as needed. Do not exceed 4 tablets in 24 hours.",
+      "availability": "In stock",
+      "active_ingredients": ["Ibuprofen"],
+      "generic_name": "Ibuprofen",
+      "side_effects": ["Nausea", "Dizziness", "Stomach upset"],
+      "price": 12.50,
+      "manufacturer": "HealthMed Pharmaceuticals"
+    },
+    {
+      "name": "AllerFree",
+      "dosages": ["10mg", "20mg"],
+      "usage_instructions": "Take one tablet daily for allergy relief. Can be taken with or without food.",
+      "availability": "In stock",
+      "active_ingredients": ["Cetirizine"],
+      "generic_name": "Cetirizine",
+      "side_effects": ["Drowsiness", "Dry mouth", "Headache"],
+      "price": 8.75,
+      "manufacturer": "AllergyCare Ltd."
+    },
+    {
+      "name": "ColdCure",
+      "dosages": ["250mg/5ml syrup", "500mg capsule"],
+      "usage_instructions": "Take 10ml of syrup twice daily or one capsule every 12 hours. Drink plenty of fluids.",
+      "availability": "Low stock",
+      "active_ingredients": ["Paracetamol", "Phenylephrine"],
+      "generic_name": "Paracetamol & Phenylephrine",
+      "side_effects": ["Nausea", "Insomnia", "Increased heart rate"],
+      "price": 15.00,
+      "manufacturer": "MediPharm Inc."
+    },
+    {
+      "name": "CardioSafe",
+      "dosages": ["50mg", "100mg"],
+      "usage_instructions": "Take one tablet daily with water. Do not skip doses.",
+      "availability": "Out of stock",
+      "active_ingredients": ["Atenolol"],
+      "generic_name": "Atenolol",
+      "side_effects": ["Fatigue", "Cold hands and feet", "Dizziness"],
+      "price": 22.00,
+      "manufacturer": "HeartWell Labs"
+    },
+    {
+      "name": "DigestEase",
+      "dosages": ["500mg", "750mg"],
+      "usage_instructions": "Take one tablet after meals up to three times daily for digestive discomfort.",
+      "availability": "In stock",
+      "active_ingredients": ["Omeprazole"],
+      "generic_name": "Omeprazole",
+      "side_effects": ["Headache", "Diarrhea", "Abdominal pain"],
+      "price": 18.50,
+      "manufacturer": "GastroHealth Ltd."
+    }
+  ],
+  "prescription_logs": [
+  {"id": 1, "user_name": "Alice", "medication": "PainAway", "date_filled": "2025-12-01", "quantity": 30, "status": "Completed"},
+  {"id": 2, "user_name": "Alice", "medication": "AllerFree", "date_filled": "2025-12-05", "quantity": 20, "status": "Completed"},
+  {"id": 3, "user_name": "Carol", "medication": "DigestEase", "date_filled": "2025-11-28", "quantity": 15, "status": "Completed"},
+  {"id": 4, "user_name": "David", "medication": "CardioSafe", "date_filled": "2025-12-02", "quantity": 30, "status": "Completed"},
+  {"id": 5, "user_name": "David", "medication": "PainAway", "date_filled": "2025-12-06", "quantity": 30, "status": "Completed"},
+  {"id": 6, "user_name": "Eve", "medication": "AllerFree", "date_filled": "2025-12-03", "quantity": 20, "status": "Completed"},
+  {"id": 7, "user_name": "Eve", "medication": "DigestEase", "date_filled": "2025-12-07", "quantity": 15, "status": "Completed"},
+  {"id": 8, "user_name": "Frank", "medication": "PainAway", "date_filled": "2025-12-04", "quantity": 30, "status": "Completed"},
+  {"id": 9, "user_name": "Grace", "medication": "ColdCure", "date_filled": "2025-12-01", "quantity": 10, "status": "Completed"},
+  {"id": 10, "user_name": "Grace", "medication": "AllerFree", "date_filled": "2025-12-05", "quantity": 20, "status": "Completed"},
+  {"id": 11, "user_name": "Hannah", "medication": "CardioSafe", "date_filled": "2025-12-08", "quantity": 30, "status": "Completed"},
+  {"id": 12, "user_name": "Ian", "medication": "DigestEase", "date_filled": "2025-12-03", "quantity": 15, "status": "Completed"},
+  {"id": 13, "user_name": "Ian", "medication": "PainAway", "date_filled": "2025-12-06", "quantity": 30, "status": "Completed"},
+  {"id": 14, "user_name": "Jack", "medication": "ColdCure", "date_filled": "2025-12-02", "quantity": 10, "status": "Completed"},
+  {"id": 15, "user_name": "Bob", "medication": "PainAway", "date_filled": "2025-12-09", "quantity": 30, "status": "Completed"}
+]
+
+}

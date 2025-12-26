@@ -1,0 +1,3 @@
+API_KEY_ENV_VAR_NAME = "OPENAI_API_KEY"
+DATABASE_FILE_NAME = "database.json"
+MODEL_NAME = "gpt-5"
